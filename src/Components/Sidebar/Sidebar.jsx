@@ -4,7 +4,7 @@ import './Sidebar.css'
 
 function Sidebar() {
   return (
-    <div className='container'>
+    
       <aside>
         <div className="toggle">
           <div className="logo">
@@ -86,7 +86,6 @@ function Sidebar() {
           </a>
         </div>
       </aside>
-    </div>
   )
 }
 
