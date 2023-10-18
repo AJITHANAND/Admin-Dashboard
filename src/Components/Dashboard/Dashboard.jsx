@@ -1,9 +1,10 @@
 import React from 'react'
 import "./Dashboard.css"
+import Header from '../Header/Header'
 function Dashboard() {
   return (
     <main>
-      <h1>Dashboard</h1>
+      <Header />
       <div className="dashboard">
         <div className="sales">
           <div className="status">
@@ -81,6 +82,35 @@ function Dashboard() {
           </div>
         </div>
       </div>
+
+
+      <div className="new-users">
+        <h2>New Users</h2>
+        <div className="user-list">
+          <div className="user">
+            <img src="images/profile-2.jpg" alt="" />
+            <h2>John</h2>
+            <p>20 Min Ago</p>
+          </div>
+          <div className="user">
+            <img src="images/profile-3.jpg" alt="" />
+            <h2>Joe</h2>
+            <p>15 Min Ago</p>
+          </div>
+          <div className="user">
+            <img src="images/profile-4.jpg" alt="" />
+            <h2>Jisoo</h2>
+            <p>5 Hours Ago</p>
+          </div>
+          <div className="user">
+            <img src="images/plus.png" alt="" />
+            <h2>More</h2>
+            <p>New Users</p>
+          </div>
+        </div>
+      </div>
+
+      
     </main>
   )
 }
