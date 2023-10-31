@@ -7,7 +7,7 @@ function Header() {
         <>
             <div className='top-navBar'>
                 <h1>Dashboard</h1>
-                <h1>user</h1>
+                <h1>USER</h1>
             </div>
         </>
     )
