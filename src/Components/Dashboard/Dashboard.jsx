@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Dashboard.css"
 import Header from '../Header/Header'
+import PieChart from '../Chart/Pie/PieChart'
 function Dashboard() {
   const Orders = [
     {
@@ -169,7 +170,9 @@ function Dashboard() {
           </div>
 
           <div className="right-section">
-              
+              <div className="charts">
+                  <PieChart />
+              </div>
           </div>
         </div>
 
