@@ -6,9 +6,7 @@ function Home() {
   return (
     <>
       <Sidebar />
-      <div className='main-content'>
-        <Dashboard />
-      </div>
+      <Dashboard />
     </>
   )
 }
