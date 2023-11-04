@@ -2,27 +2,8 @@ import React from 'react'
 import "./Dashboard.css"
 import Header from '../Header/Header'
 import PieChart from '../Chart/Pie/PieChart'
+import { Orders } from '../../Constants/tempData'
 function Dashboard() {
-  const Orders = [
-    {
-      productName: 'JavaScript Tutorial',
-      productNumber: '85743',
-      paymentStatus: 'Due',
-      status: 'Pending'
-    },
-    {
-      productName: 'CSS Full Course',
-      productNumber: '97245',
-      paymentStatus: 'Refunded',
-      status: 'Declined'
-    },
-    {
-      productName: 'Flex-Box Tutorial',
-      productNumber: '36452',
-      paymentStatus: 'Paid',
-      status: 'Active'
-    },
-  ]
 
   return (
     <>
@@ -170,9 +151,72 @@ function Dashboard() {
           </div>
 
           <div className="right-section">
-              <div className="charts">
-                  <PieChart />
+            <div className="charts">
+              <h3>Visit by Traffic Types</h3>
+              <PieChart />
+            </div>
+
+            <div className="reminders">
+              <div className="header">
+                <h2>Reminders</h2>
+                <span className="material-symbols-outlined">
+                  notifications_none
+                </span>
               </div>
+
+              <div className="notification">
+                <div className="icon">
+                  <span className="material-symbols-outlined">
+                    volume_up
+                  </span>
+                </div>
+                <div className="content">
+                  <div className="info">
+                    <h3>Workshop</h3>
+                    <small className="text-muted">
+                      10:30 AM - 12:45 PM
+                    </small>
+                  </div>
+                  <span className="material-symbols-outlined">
+                    more_vert
+                  </span>
+                </div>
+              </div>
+
+
+
+              <div className="notification deactivate">
+                <div className="icon">
+                  <span className="material-symbols-outlined">
+                    edit
+                  </span>
+                </div>
+                <div className="content">
+                  <div className="info">
+                    <h3>Workshop</h3>
+                    <small className="text-muted">
+                      10:30 AM - 12:45 PM
+                    </small>
+                  </div>
+                  <span className="material-symbols-outlined">
+                    more_vert
+                  </span>
+                </div>
+              </div>
+
+
+              <div className="notification add-reminder">
+                <div>
+                  <span className="material-symbols-outlined">
+                    add
+                  </span>
+                  <h3>Add Reminder</h3>
+                </div>
+              </div>
+
+            </div>
+
+
           </div>
         </div>
 
