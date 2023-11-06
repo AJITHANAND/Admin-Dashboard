@@ -5,7 +5,7 @@ import Dashboard from '../Components/Dashboard/Dashboard'
 function Home() {
   return (
     <>
-      <Sidebar />
+      <Sidebar/>
       <Dashboard />
     </>
   )

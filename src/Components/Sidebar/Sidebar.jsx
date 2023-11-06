@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Sidebar.css'
-
-
+import { useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
+import { toggleSidebar } from '../../Context/actions'
 function Sidebar() {
+  const isOpen = useSelector(state => state.sidebar.isOpen)
+  const dispatch = useDispatch()
+
+    const onToggle = () => {
+        dispatch(toggleSidebar())
+    }
   return (
     
-      <aside>
+      <aside className={`${isOpen ?'open':''}`}>
         <div className="toggle">
           <div className="logo">
             <img src="images/dashboard.png" />
@@ -13,7 +20,7 @@ function Sidebar() {
           </div>
 
           <div className="close" id='close-btn'>
-            <span className="material-symbols-outlined">
+            <span className="material-symbols-outlined" onClick={onToggle}>
               close
             </span>
           </div>

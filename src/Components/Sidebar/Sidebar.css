@@ -102,3 +102,7 @@ aside .sidebar .message-count{
     font-size: 11px;
     border-radius: var(--border-radius-1);
 }
+
+.open{
+    display: block !important;
+}
