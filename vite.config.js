@@ -12,6 +12,9 @@ export default defineConfig(({ mode }) => {
     },
     base: basename,
     plugins: [react()],
+    host: true,
+    strictPort: true,
+    port: 5173,
     build: {
       rollupOptions: {
         output: {
